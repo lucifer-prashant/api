@@ -3,7 +3,7 @@ import pandas as pd
 
 app = Flask(__name__)
 
-df = pd.read_csv("comp.csv")
+df = pd.read_csv("comp_with_states.csv")
 
 data = df.to_dict(orient="records")
 
