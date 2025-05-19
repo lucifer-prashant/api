@@ -1,7 +1,9 @@
 from flask import Flask, jsonify
+from flask_cors import CORS # Import CORS
 import pandas as pd
 
 app = Flask(__name__)
+CORS(app) # Enable CORS for all routes
 
 df = pd.read_csv("comp_with_states.csv")
 
